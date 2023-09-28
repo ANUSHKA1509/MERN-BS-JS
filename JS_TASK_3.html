@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS TASK-3</title>
+    <style>
+        .center {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 40vh;
+            width: 300px; 
+            margin: auto;
+            border: 2px solid black; 
+            padding: 20px; 
+        }
+        .input-group, .res-group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%; 
+        }
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;"> JS TASK - 3</h2>
+    <br/> <br/>
+
+    <div class="center">
+    
+        <div class="input-group">
+            <label>1st Number: </label>
+            <input id="numInput1" type="number" >
+        </div>
+        <br/><br/>
+        <div class="input-group">
+            <label>2nd Number: </label>
+            <input id="numInput2" type="number" >
+        </div>
+        <br/><br/>
+        <div class="button-group">
+            <button onclick="Multiply()">Multiply</button>
+            <button onclick="Divide()">Divide</button>
+        </div>
+        <br/>
+        <div class="res-group">
+        <p id="result"></p>
+    </div>
+
+    </div>
+
+    <script>
+        function Multiply() {
+            let n1 = document.getElementById('numInput1').value;
+            let n2 = document.getElementById('numInput2').value;
+            let res = n1 * n2;
+            document.getElementById('result').innerHTML = "The Result is:<br/> " + res;
+        }
+
+        function Divide() {
+            let n1 = document.getElementById('numInput1').value;
+            let n2 = document.getElementById('numInput2').value;
+            let res = n1 / n2;
+            document.getElementById('result').innerHTML = "The Result is:<br/> "+ res ;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+body {
+    font-family: sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    box-sizing: border-box;
+    }
+
+    a {
+    text-decoration: none;
+    }
+
+    .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    font-size: 14px;
+    }
+
+    .box {
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:  #fafafa;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    margin: 0 0 10px;
+    padding: 10px 0;
+    
+    }
+
+    .heading {
+    margin: 22px auto 12px;
+    background-image: url("https://www.instagram.com/static/bundles/es6/sprite_core_b20f2a3cd7e4.png/b20f2a3cd7e4.png");
+    background-position: -98px 0;
+    height: 51px;
+    width: 177px;
+    overflow: hidden;
+    }
+
+    .field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    }
+
+    input {
+    margin: 0 auto;
+    border-radius: 3px;
+    border: 1px solid #efefef;
+    padding: 9px 5px 7px 90px;
+    height: 1.2rem;
+
+    }
+
+    .fa {
+    margin-right: 10px;
+    }
+
+    .login-button {
+    text-align: center;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid transparent;
+    background-color: #3897f0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    }
+
+    .remember-me {
+    float: left;
+    }
+
+    .remember-me p {
+    display: inline-block;
+    margin-left: 10px;
+    }
+
+    .forgot-password {
+    float: right;
+    color: #3897f0;
+    }
+
+    .signup{
+    color: #3897f0;
+    }
+
+    .signup-container {
+    text-align: center;
+    }
+
+    .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+            }

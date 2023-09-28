@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS TASK-1</title>
+    <style>
+        .center {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 40vh;
+        }
+    </style>
+   
+</head>
+<body>
+    <h2 style="text-align: center;"> JS TASK - 1</h2>
+    <br/> <br/>
+
+    
+    <div class="center">
+    <input id="numInput" type="number" placeholder="Enter a number">
+    <br/><br/>
+    <button onclick="reverseNumber()">Reverse Number</button>
+    <br/>
+    <p id="result"></p>
+</div>
+    <script>
+        function reverseNumber() {
+            let num = document.getElementById('numInput').value;
+            let rev = 0;
+            while (num != 0) {
+                rev *= 10;
+                rev += num % 10;
+                num = Math.floor(num / 10);
+            }
+            document.getElementById('result').innerHTML = "Output: " + rev;
+        }
+    </script>
+
+
+</body>
+</html>
+

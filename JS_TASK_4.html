@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS TASK-4</title>
+    <style>
+        .center {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 40vh;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;"> JS TASK - 4</h2>
+    <br/> <br/>
+
+    <div class="center">
+    
+    <button onclick="showDate()">Show Date</button>
+    <p id="dateOutput"></p>
+
+    <button onclick="showTime()">Show Time</button>
+    <p id="timeOutput"></p>
+
+</div>
+
+    <script>
+        function showDate() {
+            let date = new Date();
+            document.getElementById('dateOutput').innerHTML = "Today's date is: " + date.toDateString();
+        }
+
+        function showTime() {
+            let time = new Date();
+            document.getElementById('timeOutput').innerHTML = "Current time is: " + time.toLocaleTimeString();
+        }
+    </script>
+    
+</body>
+</html>

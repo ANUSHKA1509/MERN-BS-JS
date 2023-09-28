@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS TASK-6</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        
+    
+        .box {
+            width: 700px;
+            padding: 20px;
+            background-color: rgb(238, 238, 238);
+            
+            justify-content: center;
+            align-items: center;
+            height: 150vh;
+        }
+    
+
+        .submit {
+
+width: 100%;
+height: 100%;
+padding: 10px;
+
+background-color: none;
+
+display: flex;
+align-items: center;
+align-content: center;
+justify-content: center;
+}
+
+.submit button {
+
+height: 100%;
+width: 30%;
+padding: 10px 10px;
+
+background-color: #ff8800;
+border: 1px solid #ff5400;
+border-radius: 5px;
+
+text-decoration: none;
+font-size: 1rem;
+font-weight: bold;
+letter-spacing: 0.05rem;
+
+color: white;
+cursor: pointer;
+}
+
+.submit-icon {
+
+margin-left: 3px;
+}
+
+.invalid {
+  color: #d43a4a
+}
+
+        
+        
+    </style>
+    
+</head>
+<body>
+    <h2 style="text-align: center;">BS TASK - 5</h2>
+    <br/> <br/>
+
+        <div class="box mx-auto">
+            <form class= "needs-validation" novalidate>
+                 
+                <div class="form-group required mb-3 row">
+                    <label for="name" class="col-form-label col-sm-2 text-right" style="font-weight: bold; font-size: 17px;">First Name</label>
+                    <div class="col-sm-10">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="height: calc(1.5em + .75rem + 2px);">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="First Name" id="name" required />
+                            <div class="invalid-feedback">
+                                Please supply your first name
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group required mb-3 row">
+                    <label for="name" class="col-form-label col-sm-2 text-right" style="font-weight: bold; font-size: 17px;">Last Name</label>
+                    <div class="col-sm-10">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="height: calc(1.5em + .75rem + 2px);">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Last Name" id="name" required />
+                            <div class="invalid-feedback">
+                                Please supply your last name
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-group required mb-3 row">
+                    <label for="email" class="col-form-label col-sm-2 text-right" style="font-weight: bold; font-size: 17px;">E-Mail</label>
+                    <div class="col-sm-10">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="height: calc(1.5em + .75rem + 2px);">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="E-Mail Address" id="email" required />
+                            <div class="invalid-feedback">
+                                Please supply your email address
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group required mb-3 row">
+                    <label for="phone" class="col-form-label col-sm-2 text-right" style="font-weight: bold; font-size: 17px;">Phone #</label>
+                    <div class="col-sm-10">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="height: calc(1.5em + .75rem + 2px);">
+                                    <i class="fas fa-phone-alt"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="(845)555-1212" id="phone" required />
+                            <div class="invalid-feedback">
+                                Please supply your phone number
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group required mb-3 row">
+                    <label for="address" class="col-form-label col-sm-2 text-right" style="font-weight: bold; font-size: 17px;">Address</label>
+                    <div class="col-sm-10">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="height: calc(1.5em + .75rem + 2px);">
+                                    <i class="fas fa-home"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Address" id="address" required />
+                            <div class="invalid-feedback">
+                                Please supply your street address
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-group required mb-3 row">
+                    <label for="city" class="col-form-label col-sm-2 text-right" style="font-weight: bold; font-size: 17px;">City</label>
+                    <div class="col-sm-10">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="height: calc(1.5em + .75rem + 2px);">
+                                    <i class="fas fa-home"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="City" id="city" required />
+                            <div class="invalid-feedback">
+                                Please supply your city
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group required mb-3 row">
+                    <label for="state" class="col-form-label col-sm-2 text-right" style="font-weight: bold; font-size: 17px;">State</label>
+                    <div class="col-sm-10">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="height: calc(1.5em + .75rem + 2px);">
+                                    <i class="fas fa-bars"></i>
+                                </span>
+                            </div>
+                            <select class="form-control" id="state" required>
+                             <option selected disabled value="">Please Select Your State</option>
+                                <option>Andhra Pradesh</option>
+                                <option>Bihar</option>
+                                <option>Chattisgarh</option>
+                                <option>Delhi</option>
+                                <option>Gujrat</option>
+                                <option>Tamil Nadu</option>
+                                
+                            </select>
+                            <div class="invalid-feedback">
+                                Please supply your street address
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-group required mb-3 row">
+                    <label for="hosting" class="col-form-label col-sm-2 text-right" style="font-weight: bold; font-size: 15px;">Do you have hosting?</label>
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="hostingRadio" id="hostingYes" value="yes" required>
+                            <label class="form-check-label" for="hostingYes">
+                                Yes
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="hostingRadio" id="hostingNo" value="no">
+                            <label class="form-check-label" for="hostingNo">
+                                No
+                            </label>
+                            <div class="invalid-feedback">
+                                Please select an option
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-group required mb-3 row">
+                    <label for="projectDescription" class="col-form-label col-sm-2 text-right" style="font-weight: bold; font-size: 17px;">Project Description</label>
+                    <div class="col-sm-10">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="height: calc(1.5em + .75rem + 50px);">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </span>
+                            </div>
+                            <textarea class="form-control" id="projectDescription" rows="3" required></textarea>
+                            <div class="invalid-feedback">
+                                Please supply your project description
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            
+                <br/>
+                <div class="form-group mb-3">
+                    <div class="submit">
+                        <button type="submit">
+                            SUBMIT
+                            <span class="submit-icon">
+                                <i class="fas fa-paper-plane"></i>
+                            </span>
+                        </i></button>
+                        </div>
+                </div>
+            </form>
+        </div>
+    
+<script>
+ // Example starter JavaScript for disabling form submissions if there are invalid fields
+ (function () {
+  'use strict'
+
+  var forms = document.querySelectorAll('.needs-validation')
+
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+
+          // Select all labels and icons within the form
+          var labels = form.querySelectorAll('label');
+          var icons = form.querySelectorAll('i');
+          var invalidIcons = form.querySelectorAll('.icon-invalid-feedback');
+
+          // Add 'invalid' class to labels and icons
+          labels.forEach(function(label) {
+            label.classList.add('invalid');
+          });
+          icons.forEach(function(icon) {
+            icon.classList.add('invalid');
+          });
+
+          // Show the red cross icon
+          invalidIcons.forEach(function(icon) {
+            icon.style.display = 'block';
+          });
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})();
+
+
+
+    </script>
+</body>
+</html>

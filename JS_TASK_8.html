@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8" \>
+        <meta name = "viewport" content = "width = device-width, initial-scale=1.0" \>
+
+        <title>JS TASK-8</title>
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="C:\Users\HP\OneDrive\Documents\MERN\BS & JS TASKS\bs_style_5.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <style>
+          body {
+      background: radial-gradient(circle at top, #f9f7c6, pink, #ca77ab);
+      border-radius: 100%;
+    }
+    
+    h1{
+            color:#0906c7;
+            text-align: center;
+        }
+        table {
+            width: 600px;
+            justify-content: center;
+          border-collapse: collapse;
+        }
+        .form-container {
+            display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    table input[type="text"],
+    table input[type="email"],
+    table input[type="password"],
+    table input[type="number"],
+    table input[type="tel"]{
+        width: 100%;
+        
+    }
+    table textarea {
+        width: 100%;
+        
+    }
+
+    button[type="submit"] {
+    background-color: red; 
+    color: white; 
+    border-radius: 12px; 
+}
+
+
+
+
+
+        </style>
+    </head>
+
+
+    <body>
+    
+    <h1>Registration Form</h1>
+    <br/>
+    <div class="form-container">
+    <table>
+        <tr>
+          <th>First Name</th>
+          <td><input type="text" /></td>
+        </tr>
+
+        <tr>
+            <th>Last Name</th>
+            <td><input type="text" /></td>
+        </tr>
+
+        <tr>
+          <th>Email</th>
+          <td><input type="email" /></td>
+        </tr>
+
+        <tr>
+          <th>Password</th>
+          <td><input type="password" /></td>
+        </tr>
+
+        <tr>
+          <th>Re-enter Password</th>
+          <td><input type="password" /></td>
+        </tr>
+
+        <tr>
+          <th>Gender</th>
+          <td>
+              <div><input type="radio" name="gender"/> Male</div>
+              <div><input type="radio" name="gender"/> Female</div>
+          </td>
+      </tr>
+      
+
+        <tr>
+            <th>Age</th>
+            <td><input type="number" /></td>
+        </tr>
+
+        <tr>
+            <th>Phone Number</th>
+            <td><input type="tel" /></td>
+        </tr>
+
+        <tr>
+          <th>Address</th>
+          <td><textarea></textarea></td>
+        </tr>
+
+        <tr>
+            <th>State</th>
+            <td><input type="text" /></td>
+        </tr>
+
+        <tr>
+        <th>Country</th>
+        <td>
+        <!-- Country names and Country Name -->
+<select class="form-select" id="country" name="country">
+    <option value="">---choose your country---</option>
+    <option value="Afghanistan">Afghanistan</option>
+    <option value="Aland Islands">Aland Islands</option>
+    <option value="Albania">Albania</option>
+    <option value="Algeria">Algeria</option>
+    <option value="American Samoa">American Samoa</option>
+    <option value="Andorra">Andorra</option>
+    <option value="Angola">Angola</option>
+    <option value="Anguilla">Anguilla</option>
+    <option value="Antarctica">Antarctica</option>
+    
+</select></td>
+        </tr>
+
+        <tr>
+            <th>Languages known</th>
+            <td><input type="checkbox"/>English
+                <input type="checkbox"/>Kannada
+                <input type="checkbox"/>Hindi
+                <input type="checkbox"/>Telugu</td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><input type="checkbox"/>Hereby I declare all the given details are true</td>
+        </tr>
+
+        <tr> 
+            <td colspan="2" style="text-align: right;">Log in to <a href="https://www.ethnus.com" target="_blank">Ethnus</a> website</td> 
+        </tr>
+    </table>
+    <br/>
+        <button type="submit"> REGISTER </button>
+    
+    </form>
+</div>
+
+
+<script>
+const registerButton = document.querySelector('button[type="submit"]');
+
+
+registerButton.addEventListener('click', function() {
+  
+  const inputFields = document.querySelectorAll('input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="tel"], textarea');
+
+  
+  for (const inputField of inputFields) {
+    if (inputField.value === '') {
+      
+      const poorLabel = document.createElement('label');
+      poorLabel.textContent = 'POOR';
+      poorLabel.style.color = 'red';
+
+      
+      const td = document.createElement('td');
+      td.appendChild(poorLabel);
+
+      
+      inputField.parentNode.parentNode.appendChild(td);
+    }
+  }
+});
+
+
+</script>
+
+
+    </body>
+</html>

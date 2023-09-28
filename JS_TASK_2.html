@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS TASK-2</title>
+    <style>
+        .center {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 40vh;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;"> JS TASK - 2</h2>
+    <br/> <br/>
+
+    <div class="center">
+    <input id="strInput" type="text" placeholder="Enter a string">
+    <br/>
+    <button onclick="sortString()">Sort</button>
+    <br/>
+    <p id="result"></p>
+</div>
+    <script>
+    function sortString() {
+        let str = document.getElementById('strInput').value;
+        let sortedStr = str.split('').sort().join('');
+        document.getElementById('result').innerHTML = "Sorted String: " + sortedStr;
+    }
+</script>
+    
+</body>
+</html>
